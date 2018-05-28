@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4669F5BF20BC3669002143C3 /* SimpleBindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4669F5BE20BC3669002143C3 /* SimpleBindViewController.swift */; };
 		46888F5020B2C209003A0D34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46888F4F20B2C209003A0D34 /* AppDelegate.swift */; };
 		46888F5220B2C209003A0D34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46888F5120B2C209003A0D34 /* ViewController.swift */; };
 		46888F5520B2C209003A0D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46888F5320B2C209003A0D34 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3240EA0486D6319BBFA41385 /* Pods-RxTableTextViewSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTableTextViewSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTableTextViewSample/Pods-RxTableTextViewSample.release.xcconfig"; sourceTree = "<group>"; };
+		4669F5BE20BC3669002143C3 /* SimpleBindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleBindViewController.swift; sourceTree = "<group>"; };
 		46888F4C20B2C209003A0D34 /* RxTableTextViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTableTextViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46888F4F20B2C209003A0D34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46888F5120B2C209003A0D34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				46888F5B20B2C20A003A0D34 /* Info.plist */,
 				46888F6120B2C380003A0D34 /* TextTableViewCell.swift */,
 				46888F6220B2C380003A0D34 /* TextTableViewCell.xib */,
+				4669F5BE20BC3669002143C3 /* SimpleBindViewController.swift */,
 			);
 			path = RxTableTextViewSample;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				46888F6320B2C380003A0D34 /* TextTableViewCell.swift in Sources */,
 				46888F5220B2C209003A0D34 /* ViewController.swift in Sources */,
 				46888F5020B2C209003A0D34 /* AppDelegate.swift in Sources */,
+				4669F5BF20BC3669002143C3 /* SimpleBindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

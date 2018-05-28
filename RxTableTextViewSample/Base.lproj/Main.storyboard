@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u39-Vz-L4X">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--TableView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxTableTextViewSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sYB-Mf-N2k">
-                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="467" width="375" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -43,12 +43,73 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="TableView" id="zF5-bU-Umy"/>
                     <connections>
                         <outlet property="tableView" destination="L1h-ta-BJv" id="Bhi-67-wAg"/>
                         <outlet property="textView" destination="sYB-Mf-N2k" id="9ay-YK-Iqt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--SimpleBind-->
+        <scene sceneID="NDX-5t-IbW">
+            <objects>
+                <viewController id="Mo8-qD-lZZ" customClass="SimpleBindViewController" customModule="RxTableTextViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B4K-IM-tYB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMD-67-U0i">
+                                <rect key="frame" x="10" y="50" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mk9-BL-Z4N">
+                                <rect key="frame" x="10" y="100" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mk9-BL-Z4N" firstAttribute="leading" secondItem="yaC-aq-XUy" secondAttribute="leading" constant="10" id="3KQ-tp-0qZ"/>
+                            <constraint firstItem="mk9-BL-Z4N" firstAttribute="top" secondItem="VMD-67-U0i" secondAttribute="bottom" constant="20" id="7Iv-4W-gfi"/>
+                            <constraint firstItem="VMD-67-U0i" firstAttribute="top" secondItem="yaC-aq-XUy" secondAttribute="top" constant="30" id="CfK-Y2-OpY"/>
+                            <constraint firstItem="yaC-aq-XUy" firstAttribute="trailing" secondItem="mk9-BL-Z4N" secondAttribute="trailing" constant="10" id="amB-db-eVg"/>
+                            <constraint firstItem="yaC-aq-XUy" firstAttribute="trailing" secondItem="VMD-67-U0i" secondAttribute="trailing" constant="10" id="t6s-Ko-pHg"/>
+                            <constraint firstItem="VMD-67-U0i" firstAttribute="leading" secondItem="yaC-aq-XUy" secondAttribute="leading" constant="10" id="tKp-CP-Cj1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yaC-aq-XUy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SimpleBind" id="OVi-ue-TkN"/>
+                    <connections>
+                        <outlet property="label" destination="mk9-BL-Z4N" id="rY0-OF-jiU"/>
+                        <outlet property="textField" destination="VMD-67-U0i" id="dir-qc-ueR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddj-fP-Ydg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="811.84407796101959"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vVz-P1-SmZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u39-Vz-L4X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tk2-nK-dgT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ppC-lK-DYy"/>
+                        <segue destination="Mo8-qD-lZZ" kind="relationship" relationship="viewControllers" id="0ST-Xh-Hgq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqU-lH-IAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
